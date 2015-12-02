@@ -1,7 +1,7 @@
 /**
  * Driver used to test program.
  * 
- * @author Cian Skelly - 0559377
+ * @author xianskel
  */
 public class Driver {
 

@@ -1,7 +1,7 @@
 /**
  * Represents an individual track
  * 
- * @author Cian Skelly - 0559377
+ * @author xianskel
  */
 public class Track implements Comparable<Track>{
 	
