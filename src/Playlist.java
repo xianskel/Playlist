@@ -74,16 +74,14 @@ public class Playlist {
 		if(this.playlist.length>=100){
 			System.out.println("\""+t.getName()+"\""+" cannot be added. Playlist is full.");
 		}
+		else if(indexOf(t)!=-1){
+   			System.out.println("\""+t.getName()+"\""+" cannot be added. Track is already in playlist.");
+			}
 		else{
-			if(indexOf(t)!=-1){
-				System.out.println("\""+t.getName()+"\""+" cannot be added. Track is already in playlist.");
+			this.playlist = Arrays.copyOf(this.playlist, this.playlist.length + 1);
+		    this.playlist[this.playlist.length-1] = t;			  
 			}
-			else{
-				Track[] tempList = Arrays.copyOf(this.playlist, this.playlist.length + 1);
-		        tempList[tempList.length-1] = t;			  
-		        this.playlist = Arrays.copyOf(tempList, tempList.length);
-			}
-		}
+		
 	}
 	
 	/**
