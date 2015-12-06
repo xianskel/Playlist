@@ -4,7 +4,7 @@ import java.util.Collections;
 /**
  * Represents a playlist of tracks. Maximum 100 tracks
  * 
- * @author xianskel
+ * @author Cian Skelly
  */
 
 public class Playlist {
